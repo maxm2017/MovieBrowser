@@ -1,18 +1,11 @@
 import Hero from "./Hero";
+import Body from "./Body";
 
 const Home = () => {
     return(
       <>
-        <Hero text = "Welcome to React 201"/>
-        <div className = "container">
-          <div className = "row">
-            <div className = "col-lg-8 offset-lg-2 my-5">
-              <p className = "lead">
-              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </p>
-            </div>
-          </div>
-        </div>
+        <Hero text = "Movie Browser"/>
+        <Body text = "Use the search bar in the top left to search the MovieDB movie database!" />
       </>
     )
   }

@@ -15,12 +15,6 @@ const NavBar = ({searchText, setSearchText}) => {
     console.log(e.target.value);
     setSearchText(searchText);
   }
-  const updateSearchTextEnterKey = (e) => {
-    e.preventDefault();
-    history.push('/search');
-    console.log(e.target.value);
-    setSearchText(searchText);
-  }
 
     return(
       <div>
@@ -37,9 +31,6 @@ const NavBar = ({searchText, setSearchText}) => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link disabled" to="#" tabIndex="-1" aria-disabled="true">Disabled</Link>
               </li>
             </ul>
             <form className="d-flex">
