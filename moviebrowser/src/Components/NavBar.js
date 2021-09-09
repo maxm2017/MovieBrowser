@@ -10,9 +10,16 @@ const NavBar = ({searchText, setSearchText}) => {
     setSearchText(e.target.value);
   }
   const updateSearchTextButton = (e) => {
+    e.preventDefault();
     history.push('/search');
     console.log(e.target.value);
-    setSearchText(e.target.value);
+    setSearchText(searchText);
+  }
+  const updateSearchTextEnterKey = (e) => {
+    e.preventDefault();
+    history.push('/search');
+    console.log(e.target.value);
+    setSearchText(searchText);
   }
 
     return(
@@ -36,8 +43,8 @@ const NavBar = ({searchText, setSearchText}) => {
               </li>
             </ul>
             <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value = {searchText} onChange={updateSearchText} formaction={updateSearchTextButton} />
-              <button className="btn btn-outline-success" type="button" onClick = {updateSearchTextButton}>Search</button>
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value = {searchText} onChange={updateSearchText} formAction={updateSearchTextButton} onSubmit={updateSearchTextButton}/>
+              <button className="btn btn-outline-success" type="submit" onClick = {updateSearchTextButton}>Search</button>
             </form>
           </div>
         </div>
