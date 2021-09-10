@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e6bebe66-4dc1-4cfd-bc50-d4cf98ff1680/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/MaxMMovieBrowser",
+    "appService.deploySubpath": "."
+}
